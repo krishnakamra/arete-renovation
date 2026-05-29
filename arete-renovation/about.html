@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Arete Renovation | Toronto's Remodeling Experts</title>
+  <meta name="description" content="Learn about Arete Renovation — our story, our values, and our unwavering commitment to premium craftsmanship across the Greater Toronto Area."/>
+  <link rel="canonical" href="https://areterenovation.ca/about.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{gold:'#C5A059','gold-light':'#E6C786','gold-dark':'#8A6D3B'},fontFamily:{cinzel:['Cinzel','serif'],montserrat:['Montserrat','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="css/global.css"/>
+  <style>
+    .value-card { background:var(--bg-card); border:1px solid rgba(255,255,255,0.05); padding:2rem; transition:all 0.4s; position:relative; overflow:hidden; }
+    .value-card::before { content:''; position:absolute; top:0;left:0;right:0; height:2px; background:linear-gradient(90deg,transparent,var(--gold),transparent); transform:scaleX(0); transition:transform 0.4s; }
+    .value-card:hover::before { transform:scaleX(1); }
+    .value-card:hover { transform:translateY(-4px); box-shadow:0 20px 60px rgba(0,0,0,0.5); }
+
+    .team-card { position:relative; overflow:hidden; }
+    .team-card img { width:100%;height:380px;object-fit:cover;filter:grayscale(20%);transition:all 0.5s; }
+    .team-card:hover img { filter:grayscale(0);transform:scale(1.04); }
+    .team-info { position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(0deg,rgba(10,10,10,0.95) 0%,transparent 100%); }
+
+    .timeline-item { position:relative; padding-left:3rem; }
+    .timeline-item::before { content:''; position:absolute;left:0;top:0;bottom:-2rem;width:1px;background:linear-gradient(180deg,var(--gold),transparent); }
+    .timeline-dot { position:absolute;left:-5px;top:4px;width:10px;height:10px;background:var(--gold);transform:rotate(45deg); }
+  </style>
+</head>
+<body class="bg-[#0A0A0A]">
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container flex items-center justify-between">
+      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Arete Renovation Logo"/></a>
+      <ul class="hidden lg:flex items-center gap-8">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link active">About</a></li>
+        <li class="nav-dropdown">
+          <a href="services.html" class="nav-link">Services ▾</a>
+          <div class="dropdown-menu">
+            <div style="padding:0.5rem 1.2rem;font-size:0.6rem;letter-spacing:0.2em;color:#8A6D3B;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.06);">Interior</div>
+            <a href="home-improvement.html" class="dropdown-item">Home Improvement</a>
+            <a href="basement-renovation.html" class="dropdown-item">Basement Renovation</a>
+            <a href="bathroom-renovation.html" class="dropdown-item">Bathroom Renovation</a>
+            <a href="painting.html" class="dropdown-item">Painting</a>
+            <a href="carpentry.html" class="dropdown-item">Carpentry</a>
+            <a href="flooring-tiling.html" class="dropdown-item">Flooring & Tiling</a>
+            <a href="handyman-services.html" class="dropdown-item">Handyman Services</a>
+            <div style="padding:0.5rem 1.2rem;font-size:0.6rem;letter-spacing:0.2em;color:#8A6D3B;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.06);border-top:1px solid rgba(255,255,255,0.06);">Exterior</div>
+            <a href="deck.html" class="dropdown-item">Deck Construction</a>
+            <a href="fence.html" class="dropdown-item">Fence Installation</a>
+            <a href="custom-sheds.html" class="dropdown-item">Custom Sheds</a>
+            <a href="custom-pergola.html" class="dropdown-item">Custom Pergola</a>
+            <a href="gazebo-installation.html" class="dropdown-item">Gazebo Installation</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hidden lg:flex items-center gap-6">
+        <a href="tel:4379900355" class="text-[#C5A059] font-montserrat text-sm font-semibold tracking-wider hover:text-[#E6C786] transition-colors">437-990-0355</a>
+        <a href="contact.html" class="btn-gold">Free Estimate</a>
+      </div>
+      <button id="hamburger" class="hamburger lg:hidden"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div id="mobile-menu">
+    <button id="mobile-close" style="position:absolute;top:1.5rem;right:1.5rem;color:#C5A059;font-size:1.5rem;background:none;border:none;">✕</button>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="tel:4379900355" style="font-family:'Montserrat',sans-serif;font-size:1.1rem;color:#C5A059;font-weight:700;">437-990-0355</a>
+    <a href="contact.html" class="btn-gold mt-4">Free Estimate</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=85&fit=crop');"></div>
+    <div class="page-hero-content container text-center py-10">
+      <span class="eyebrow reveal">Our Story</span>
+      <h1 style="font-family:'Cinzel',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;margin-bottom:1rem;" class="reveal delay-1">
+        Built on <span class="gold-text">Excellence</span>
+      </h1>
+      <p style="color:#A0A0A0;font-size:1.05rem;max-width:600px;margin:0 auto;" class="reveal delay-2">
+        Discover the people, principles, and passion behind Toronto's most trusted renovation company.
+      </p>
+    </div>
+  </section>
+
+  <!-- MISSION STATEMENT -->
+  <section class="section-pad bg-[#0A0A0A]">
+    <div class="container-sm text-center">
+      <span class="eyebrow reveal">Our Philosophy</span>
+      <blockquote style="font-family:'Cinzel',serif;font-size:clamp(1.5rem,3.5vw,2.5rem);font-weight:600;line-height:1.3;color:#F5F5F5;margin:1.5rem 0 2rem;" class="reveal delay-1">
+        "We do not simply renovate homes — <span class="gold-text">we elevate lives.</span> Every tile placed, every beam fitted, every coat of paint applied is an act of craft performed with full intention."
+      </blockquote>
+      <div style="display:flex;align-items:center;justify-content:center;gap:1rem;" class="reveal delay-2">
+        <div style="width:40px;height:1px;background:var(--gold);opacity:0.4;"></div>
+        <span style="font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:#8A6D3B;font-weight:700;">Arete Renovation — Founded 2012</span>
+        <div style="width:40px;height:1px;background:var(--gold);opacity:0.4;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE STORY -->
+  <section class="section-pad" style="background:var(--bg-dark);">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="reveal-left">
+          <span class="eyebrow">Our Origins</span>
+          <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:700;margin-bottom:1.5rem;">
+            From a Single Vision to <span class="gold-text">250+ Transformations</span>
+          </h2>
+          <span class="gold-line"></span>
+          <p style="color:#A0A0A0;line-height:1.9;margin-bottom:1rem;font-size:0.92rem;">
+            Arete Renovation was born from a simple but powerful conviction: homeowners deserve a renovation partner who treats their home with the same care and pride as their own. Founded in the Greater Toronto Area in 2012, we began with residential carpentry and quickly earned a reputation that grew entirely by word of mouth.
+          </p>
+          <p style="color:#A0A0A0;line-height:1.9;margin-bottom:1rem;font-size:0.92rem;">
+            Over the following decade, we expanded our capabilities to encompass every major facet of home renovation — from sophisticated basement finishing and luxury bathroom remodels, to custom outdoor structures that transform backyards into resort-like retreats.
+          </p>
+          <p style="color:#A0A0A0;line-height:1.9;font-size:0.92rem;">
+            Today, our team of dedicated tradespeople, designers, and project managers operates with the same founding principle: that excellence is not an option — it is the only standard we know.
+          </p>
+        </div>
+        <div class="reveal-right">
+          <div class="grid grid-cols-2 gap-4">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80&fit=crop" alt="Craftsman at work" style="width:100%;height:260px;object-fit:cover;"/>
+            <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=500&q=80&fit=crop" alt="Renovation in progress" style="width:100%;height:260px;object-fit:cover;margin-top:2rem;"/>
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&q=80&fit=crop" alt="Beautiful finished space" style="width:100%;height:260px;object-fit:cover;margin-top:-2rem;"/>
+            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=80&fit=crop" alt="Modern kitchen finish" style="width:100%;height:260px;object-fit:cover;"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-pad-sm bg-[#0A0A0A]" style="border-top:1px solid rgba(197,160,89,0.1);border-bottom:1px solid rgba(197,160,89,0.1);">
+    <div class="container">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="reveal delay-1">
+          <div class="stat-num" data-count="250" data-suffix="+">0+</div>
+          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#555;margin-top:0.5rem;">Projects Completed</div>
+        </div>
+        <div class="reveal delay-2">
+          <div class="stat-num" data-count="12" data-suffix="+">0+</div>
+          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#555;margin-top:0.5rem;">Years of Experience</div>
+        </div>
+        <div class="reveal delay-3">
+          <div class="stat-num" data-count="98" data-suffix="%">0%</div>
+          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#555;margin-top:0.5rem;">Client Satisfaction</div>
+        </div>
+        <div class="reveal delay-4">
+          <div class="stat-num" data-count="5" data-suffix=" Year">0</div>
+          <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:#555;margin-top:0.5rem;">Workmanship Warranty</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="section-pad" style="background:var(--bg-dark);">
+    <div class="container">
+      <div class="text-center mb-14 reveal">
+        <span class="eyebrow">What Drives Us</span>
+        <h2 style="font-family:'Cinzel',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">
+          Our Core <span class="gold-text">Values</span>
+        </h2>
+        <span class="gold-line center"></span>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="value-card reveal delay-1">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">⚒</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Master Craftsmanship</h3>
+          <p style="font-size:0.84rem;color:#666;line-height:1.75;">Every cut, joint, and finish is executed with technical mastery. We invest in quality materials and the skills to use them properly — because shortcuts have no place in a home you love.</p>
+        </div>
+        <div class="value-card reveal delay-2">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">🤝</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Radical Transparency</h3>
+          <p style="font-size:0.84rem;color:#666;line-height:1.75;">No surprise invoices. No vague timelines. From day one, you receive a detailed scope, a clear quote, and honest communication throughout — because your trust is our most valuable material.</p>
+        </div>
+        <div class="value-card reveal delay-3">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">📐</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Precision Planning</h3>
+          <p style="font-size:0.84rem;color:#666;line-height:1.75;">Great results begin long before a hammer is swung. Our meticulous project planning minimizes disruption to your life and ensures every phase unfolds exactly as designed.</p>
+        </div>
+        <div class="value-card reveal delay-1">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">🏆</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Relentless Quality</h3>
+          <p style="font-size:0.84rem;color:#666;line-height:1.75;">We are not satisfied until you are. Our final walkthrough is rigorous because our standard is perfection — every detail is checked, every surface inspected before handover.</p>
+        </div>
+        <div class="value-card reveal delay-2">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">🌿</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Responsible Practices</h3>
+          <p style="font-size:0.84rem;color:#666;line-height:1.75;">We prioritize low-VOC paints, sustainable materials where possible, and responsible waste management. Building beautiful spaces shouldn't come at the environment's expense.</p>
+        </div>
+        <div class="value-card reveal delay-3">
+          <div style="font-size:2.5rem;margin-bottom:1rem;">💬</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1rem;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Client Partnership</h3>
+          <p style="font-size:0.84rem;color:#666;line-height:1.75;">We treat every client as a partner, not a transaction. Your input shapes every decision. Your satisfaction isn't the goal — it's the baseline from which we exceed expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section-pad bg-[#0A0A0A]">
+    <div class="container-sm">
+      <div class="text-center mb-14 reveal">
+        <span class="eyebrow">Our Journey</span>
+        <h2 style="font-family:'Cinzel',serif;font-size:clamp(2rem,4vw,3rem);font-weight:700;">
+          A Decade of <span class="gold-text">Growth</span>
+        </h2>
+        <span class="gold-line center"></span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:2rem;">
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-dot"></div>
+          <div style="font-family:'Cinzel',serif;font-size:0.8rem;color:#8A6D3B;letter-spacing:0.15em;margin-bottom:0.4rem;">2012</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1.05rem;color:#E6C786;margin-bottom:0.5rem;">The Beginning</h3>
+          <p style="font-size:0.85rem;color:#666;line-height:1.75;">Arete Renovation launches in the GTA with a focus on custom carpentry and residential trim work. First 10 clients are secured entirely through referrals.</p>
+        </div>
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div style="font-family:'Cinzel',serif;font-size:0.8rem;color:#8A6D3B;letter-spacing:0.15em;margin-bottom:0.4rem;">2015</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1.05rem;color:#E6C786;margin-bottom:0.5rem;">Full-Service Expansion</h3>
+          <p style="font-size:0.85rem;color:#666;line-height:1.75;">Team grows to 8 specialized tradespeople. Services expand to include basement finishing, bathroom renovation, and flooring installation. 50th project milestone reached.</p>
+        </div>
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-dot"></div>
+          <div style="font-family:'Cinzel',serif;font-size:0.8rem;color:#8A6D3B;letter-spacing:0.15em;margin-bottom:0.4rem;">2018</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1.05rem;color:#E6C786;margin-bottom:0.5rem;">Exterior Division Launch</h3>
+          <p style="font-size:0.85rem;color:#666;line-height:1.75;">Outdoor living division established. Custom decks, pergolas, gazebos, and fence work added to the portfolio. 100th project completed with a landmark whole-home transformation.</p>
+        </div>
+        <div class="timeline-item reveal delay-4">
+          <div class="timeline-dot"></div>
+          <div style="font-family:'Cinzel',serif;font-size:0.8rem;color:#8A6D3B;letter-spacing:0.15em;margin-bottom:0.4rem;">2022</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1.05rem;color:#E6C786;margin-bottom:0.5rem;">200 Projects & Beyond</h3>
+          <p style="font-size:0.85rem;color:#666;line-height:1.75;">The 200-project milestone is reached. 5-Year Workmanship Warranty introduced. Client satisfaction rating maintained at 98%+ across all completed projects.</p>
+        </div>
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-dot"></div>
+          <div style="font-family:'Cinzel',serif;font-size:0.8rem;color:#8A6D3B;letter-spacing:0.15em;margin-bottom:0.4rem;">Today</div>
+          <h3 style="font-family:'Cinzel',serif;font-size:1.05rem;color:#E6C786;margin-bottom:0.5rem;">Still Growing, Still Committed</h3>
+          <p style="font-size:0.85rem;color:#666;line-height:1.75;">250+ projects completed across the GTA. Our team continues to grow, our craft continues to deepen, and our commitment to arete — excellence — remains absolute.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMISE -->
+  <section class="section-pad" style="background:linear-gradient(135deg,#111111 0%,#1a1400 60%,#111111 100%);border-top:1px solid rgba(197,160,89,0.1);">
+    <div class="container-sm text-center">
+      <span class="eyebrow reveal">Our Guarantee</span>
+      <h2 style="font-family:'Cinzel',serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:700;margin-bottom:1.5rem;" class="reveal delay-1">
+        The Arete <span class="gold-text">Promise</span>
+      </h2>
+      <span class="gold-line center reveal delay-1"></span>
+      <p style="color:#A0A0A0;font-size:0.95rem;line-height:1.9;margin-bottom:2rem;" class="reveal delay-2">
+        Every project we accept comes with our written 5-Year Workmanship Warranty. If anything we build, install, or finish fails due to workmanship within five years, we return and make it right — at no cost to you. This is not a marketing promise. It is a contractual commitment, because we build things we stand behind.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-3">
+        <a href="contact.html" class="btn-gold">Start Your Project</a>
+        <a href="services.html" class="btn-outline">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="lg:col-span-2">
+          <div class="footer-logo mb-5"><img src="images/logo.svg" alt="Arete Renovation Logo"/></div>
+          <p style="font-size:0.85rem;color:#666;line-height:1.8;max-width:340px;margin-bottom:1.5rem;">Toronto's premier home renovation and remodeling experts. Craftsmanship that stands the test of time.</p>
+          <div style="display:flex;gap:0.75rem;">
+            <a href="#" style="width:36px;height:36px;border:1px solid rgba(197,160,89,0.2);display:flex;align-items:center;justify-content:center;color:#8A6D3B;transition:all 0.3s;" onmouseover="this.style.borderColor='#C5A059';this.style.color='#C5A059'" onmouseout="this.style.borderColor='rgba(197,160,89,0.2)';this.style.color='#8A6D3B'" aria-label="Facebook"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" style="width:36px;height:36px;border:1px solid rgba(197,160,89,0.2);display:flex;align-items:center;justify-content:center;color:#8A6D3B;transition:all 0.3s;" onmouseover="this.style.borderColor='#C5A059';this.style.color='#C5A059'" onmouseout="this.style.borderColor='rgba(197,160,89,0.2)';this.style.color='#8A6D3B'" aria-label="Instagram"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;color:#E6C786;letter-spacing:0.08em;margin-bottom:1.25rem;">Quick Links</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.6rem;">
+            <li><a href="index.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Home</a></li>
+            <li><a href="about.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">About Us</a></li>
+            <li><a href="services.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">All Services</a></li>
+            <li><a href="contact.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;color:#E6C786;letter-spacing:0.08em;margin-bottom:1.25rem;">Contact</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.9rem;">
+            <li><a href="tel:4379900355" style="font-size:0.82rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">437-990-0355</a></li>
+            <li><a href="mailto:areterenovation16@gmail.com" style="font-size:0.82rem;color:#666;transition:color 0.2s;word-break:break-all;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">areterenovation16@gmail.com</a></li>
+            <li><span style="font-size:0.82rem;color:#666;">Greater Toronto Area, ON</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="gold-divider"></div>
+    <div class="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p style="font-size:0.72rem;color:#444;">&copy; 2025 Arete Renovation. All rights reserved.</p>
+      <p style="font-size:0.72rem;color:#444;">Serving the Greater Toronto Area</p>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+</body>
+</html>
