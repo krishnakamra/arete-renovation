@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Carpentry and Millwork | Arete Renovation Toronto</title>
+  <meta name="description" content="Expert custom carpentry and millwork in Toronto by Arete Renovation. Built-ins, crown moulding, cabinetry, wainscoting, and bespoke woodwork crafted to perfection."/>
+  <link rel="canonical" href="https://areterenovation.ca/carpentry.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{gold:"#C5A059","gold-light":"#E6C786","gold-dark":"#8A6D3B"},fontFamily:{cinzel:["Cinzel","serif"],montserrat:["Montserrat","sans-serif"]}}}}</script>
+  <link rel="stylesheet" href="css/global.css"/>
+  <style>
+    .faq-item { border-bottom:1px solid rgba(255,255,255,0.06); }
+    .faq-q { width:100%;text-align:left;background:none;border:none;color:#F5F5F5;font-family:'Cinzel',serif;font-size:0.92rem;font-weight:600;letter-spacing:0.04em;padding:1.25rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color 0.3s; }
+    .faq-q:hover { color:#C5A059; }
+    .faq-icon { font-size:1.4rem;color:#C5A059;flex-shrink:0;transition:transform 0.3s;line-height:1; }
+    .faq-icon.rotated { transform:rotate(45deg); }
+    .faq-a { max-height:0;overflow:hidden;transition:max-height 0.4s ease; }
+    .faq-a.open { max-height:500px; }
+  </style>
+</head>
+<body class="bg-[#0A0A0A]">
+
+  <nav id="navbar">
+    <div class="container flex items-center justify-between">
+      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Arete Renovation Logo"/></a>
+      <ul class="hidden lg:flex items-center gap-8">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-dropdown"><a href="services.html" class="nav-link active">Services &#9660;</a>
+          <div class="dropdown-menu">
+            <div style="padding:0.5rem 1.2rem;font-size:0.6rem;letter-spacing:0.2em;color:#8A6D3B;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.06);">Interior</div>
+            <a href="home-improvement.html" class="dropdown-item">Home Improvement</a>
+            <a href="basement-renovation.html" class="dropdown-item">Basement Renovation</a>
+            <a href="bathroom-renovation.html" class="dropdown-item">Bathroom Renovation</a>
+            <a href="painting.html" class="dropdown-item">Painting</a>
+            <a href="carpentry.html" class="dropdown-item">Carpentry</a>
+            <a href="flooring-tiling.html" class="dropdown-item">Flooring &amp; Tiling</a>
+            <a href="handyman-services.html" class="dropdown-item">Handyman Services</a>
+            <div style="padding:0.5rem 1.2rem;font-size:0.6rem;letter-spacing:0.2em;color:#8A6D3B;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.06);border-top:1px solid rgba(255,255,255,0.06);">Exterior</div>
+            <a href="deck.html" class="dropdown-item">Deck Construction</a>
+            <a href="fence.html" class="dropdown-item">Fence Installation</a>
+            <a href="custom-sheds.html" class="dropdown-item">Custom Sheds</a>
+            <a href="custom-pergola.html" class="dropdown-item">Custom Pergola</a>
+            <a href="gazebo-installation.html" class="dropdown-item">Gazebo Installation</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hidden lg:flex items-center gap-6">
+        <a href="tel:4379900355" class="text-[#C5A059] font-montserrat text-sm font-semibold tracking-wider hover:text-[#E6C786] transition-colors">437-990-0355</a>
+        <a href="contact.html" class="btn-gold">Free Estimate</a>
+      </div>
+      <button id="hamburger" class="hamburger lg:hidden"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div id="mobile-menu">
+    <button id="mobile-close" style="position:absolute;top:1.5rem;right:1.5rem;color:#C5A059;font-size:1.5rem;background:none;border:none;">&#10005;</button>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="tel:4379900355" style="font-family:'Montserrat',sans-serif;font-size:1.1rem;color:#C5A059;font-weight:700;">437-990-0355</a>
+    <a href="contact.html" class="btn-gold mt-4">Free Estimate</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1600&q=85&fit=crop');"></div>
+    <div class="page-hero-content container py-10">
+      <span class="service-badge mb-4 reveal" style="display:inline-block;">Interior</span>
+      <span class="eyebrow reveal delay-1">Bespoke Woodcraft</span>
+      <h1 style="font-family:'Cinzel',serif;font-size:clamp(2.2rem,5.5vw,4.5rem);font-weight:900;margin-bottom:1rem;max-width:800px;" class="reveal delay-2">
+        Custom <span class="gold-text">Carpentry</span>
+      </h1>
+      <p style="color:#A0A0A0;font-size:1.05rem;max-width:600px;line-height:1.7;" class="reveal delay-3">Where engineering precision meets artistic sensibility. Our master carpenters craft bespoke woodwork that gives your home an unmistakable sense of quality, character, and permanence.</p>
+      <div class="flex flex-wrap gap-4 mt-8 reveal delay-4">
+        <a href="contact.html" class="btn-gold">Get a Free Estimate</a>
+        <a href="tel:4379900355" class="btn-outline">437-990-0355</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-[#0A0A0A]">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="reveal-left">
+          <span class="eyebrow">Overview</span>
+          <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;margin-bottom:1.25rem;line-height:1.15;">
+            Why Choose Arete for <span class="gold-text">Carpentry</span>?
+          </h2>
+          <span class="gold-line"></span>
+          <p style="color:#A0A0A0;line-height:1.9;font-size:0.93rem;margin-bottom:1rem;">Fine carpentry is the art form that separates a good renovation from a truly exceptional one. It is the detail work — the crown moulding that crowns a room, the built-in bookcase that transforms a wall into architecture, the wainscoting that adds gravitas to a hallway — that leaves the lasting impression every homeowner deserves.</p>
+          <p style="color:#A0A0A0;line-height:1.9;font-size:0.93rem;">Arete's carpentry team brings decades of combined experience in both traditional hand-tool techniques and modern precision work. We build from your measurements and vision, crafting custom pieces that fit your specific space perfectly and reflect your personal aesthetic with authenticity and artistry.</p>
+          <ul style="display:flex;flex-direction:column;gap:0.65rem;margin-top:1rem;"><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Crown moulding, coffered ceilings, and beam systems</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Custom built-in bookcases and entertainment units</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Wainscoting, beadboard, and wall panelling</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Kitchen and bathroom cabinetry and millwork</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Custom stairs, railings, balusters, and newel posts</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Window and door casing, architrave, and trim</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Built-in closet organiser and wardrobe systems</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Feature walls and three-dimensional architectural details</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Fireplace surrounds, mantels, and overmantels</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Custom mudroom and entryway millwork</li></ul>
+        </div>
+        <div class="reveal-right">
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=85&fit=crop" alt="Custom Carpentry" style="width:100%;height:500px;object-fit:cover;"/>
+            <div style="position:absolute;bottom:-20px;left:-20px;background:linear-gradient(135deg,#C5A059,#8A6D3B);padding:1.5rem 2rem;">
+              <div style="font-family:'Cinzel',serif;font-size:1.6rem;font-weight:900;color:#0A0A0A;">5</div>
+              <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(10,10,10,0.7);">Year Warranty</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background:var(--bg-dark);">
+    <div class="container">
+      <div class="text-center mb-12 reveal">
+        <span class="eyebrow">Our Craftsmanship Approach</span>
+        <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;">Our <span class="gold-text">Approach</span></h2>
+        <span class="gold-line center"></span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6"><div class="reveal delay-1" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Measure Twice, Cut Once</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Every piece starts with precise measurement and a detailed drawing. We discuss profiles, materials, and finishes with you before any wood is touched — preventing errors and ensuring perfect results from first fit to final nail.</p></div><div class="reveal delay-2" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Hardwood and Paint-Grade Options</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Whether you want the warmth of stained oak, the elegance of painted maple, or the richness of black walnut, we work in the wood species and finish that suits your vision and your budget.</p></div><div class="reveal delay-3" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Factory-Tight Joints</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Our joiners are obsessed with tight, gap-free joints and perfect mitre angles. The hallmark of master carpentry is what you cannot see — the invisible precision inside every joint and corner.</p></div><div class="reveal delay-4" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Site-Built Custom Fit</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Unlike modular systems from big-box stores, our carpentry is built on site to your exact dimensions. Floors that slope, walls that bow, and ceilings that vary are all accommodated without compromise.</p></div><div class="reveal delay-5" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Primed for Paint or Stain</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">All our carpentry work is delivered properly primed and ready for finish coats. We can provide full finishing as part of the carpentry scope — one team, one consistent result, no trade coordination.</p></div><div class="reveal delay-6" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Architectural Cohesion</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">We study your home's existing architectural character and match or complement it accurately. Period homes get period-appropriate details; contemporary spaces get clean, geometric precision.</p></div></div>
+    </div>
+  </section>
+
+  <section class="section-pad bg-[#0A0A0A]">
+    <div class="container">
+      <div class="text-center mb-12 reveal">
+        <span class="eyebrow">Project Gallery</span>
+        <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;">Recent <span class="gold-text">Work</span></h2>
+        <span class="gold-line center"></span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4"><div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=700&q=80&fit=crop" alt="Custom Built-Ins"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Custom Built-Ins</span></div></div><div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="Crown Moulding"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Crown Moulding</span></div></div><div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80&fit=crop" alt="Cabinet Work"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Cabinet Work</span></div></div></div>
+    </div>
+  </section>
+
+  <section class="section-pad" style="background:var(--bg-dark);">
+    <div class="container-sm">
+      <div class="text-center mb-12 reveal">
+        <span class="eyebrow">Common Questions</span>
+        <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;">Frequently <span class="gold-text">Asked</span></h2>
+        <span class="gold-line center"></span>
+      </div>
+      <div><div class="faq-item reveal"><button class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.faq-icon').classList.toggle('rotated')"><span>Can you match existing trim profiles in my older home?</span><span class="faq-icon">+</span></button><div class="faq-a"><p style="font-size:0.87rem;color:#A0A0A0;line-height:1.8;padding:1rem 0;">Yes. We have access to a wide range of historical moulding profiles and can custom-manufacture profiles by routing them to match your existing trim precisely. Period-appropriate matching is one of our most requested specialties.</p></div></div><div class="faq-item reveal"><button class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.faq-icon').classList.toggle('rotated')"><span>What wood species do you work with?</span><span class="faq-icon">+</span></button><div class="faq-a"><p style="font-size:0.87rem;color:#A0A0A0;line-height:1.8;padding:1rem 0;">We work with virtually all species — maple, oak, walnut, cherry, pine, MDF, and more. We recommend the best material for your application based on budget, durability, paint vs. stain finish, and the character of your home.</p></div></div><div class="faq-item reveal"><button class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.faq-icon').classList.toggle('rotated')"><span>Do built-ins add value to a home?</span><span class="faq-icon">+</span></button><div class="faq-a"><p style="font-size:0.87rem;color:#A0A0A0;line-height:1.8;padding:1rem 0;">Quality built-in carpentry consistently adds market value and appeal. Well-designed built-ins are a sought-after feature for buyers, and high-quality millwork signals overall renovation quality throughout a home.</p></div></div><div class="faq-item reveal"><button class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.faq-icon').classList.toggle('rotated')"><span>How long does custom carpentry typically take?</span><span class="faq-icon">+</span></button><div class="faq-a"><p style="font-size:0.87rem;color:#A0A0A0;line-height:1.8;padding:1rem 0;">This varies significantly by scope. A single fireplace mantel may take 2-3 days on site; a complete built-in library wall with face frames and doors could take 1-2 weeks including finishing.</p></div></div></div>
+    </div>
+  </section>
+
+  <section class="section-pad-sm" style="background:linear-gradient(135deg,#111111 0%,#1a1400 60%,#111111 100%);border-top:1px solid rgba(197,160,89,0.1);border-bottom:1px solid rgba(197,160,89,0.1);">
+    <div class="container text-center">
+      <span class="eyebrow reveal">Start Your Project</span>
+      <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.75rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;" class="reveal delay-1">
+        Ready for Your <span class="gold-text">Carpentry Transformation</span>?
+      </h2>
+      <p style="color:#666;font-size:0.92rem;max-width:520px;margin:0 auto 2rem;" class="reveal delay-2">Contact Arete Renovation today for a free, no-obligation estimate. Our specialists will walk through your project and provide a transparent, detailed quote.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-3">
+        <a href="contact.html" class="btn-gold">Request Free Estimate</a>
+        <a href="tel:4379900355" class="btn-outline">Call 437-990-0355</a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="lg:col-span-2">
+          <div class="footer-logo mb-5"><img src="images/logo.svg" alt="Arete Renovation Logo"/></div>
+          <p style="font-size:0.85rem;color:#666;line-height:1.8;max-width:340px;margin-bottom:1.5rem;">Toronto&#39;s premier home renovation and remodeling experts. Craftsmanship that stands the test of time.</p>
+          <div style="display:flex;gap:0.75rem;">
+            <a href="#" style="width:36px;height:36px;border:1px solid rgba(197,160,89,0.2);display:flex;align-items:center;justify-content:center;color:#8A6D3B;transition:all 0.3s;" onmouseover="this.style.borderColor='#C5A059';this.style.color='#C5A059'" onmouseout="this.style.borderColor='rgba(197,160,89,0.2)';this.style.color='#8A6D3B'" aria-label="Facebook"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" style="width:36px;height:36px;border:1px solid rgba(197,160,89,0.2);display:flex;align-items:center;justify-content:center;color:#8A6D3B;transition:all 0.3s;" onmouseover="this.style.borderColor='#C5A059';this.style.color='#C5A059'" onmouseout="this.style.borderColor='rgba(197,160,89,0.2)';this.style.color='#8A6D3B'" aria-label="Instagram"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;color:#E6C786;letter-spacing:0.08em;margin-bottom:1.25rem;">Our Services</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.6rem;">
+            <li><a href="basement-renovation.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Basement Renovation</a></li>
+            <li><a href="bathroom-renovation.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Bathroom Renovation</a></li>
+            <li><a href="deck.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Deck Construction</a></li>
+            <li><a href="custom-pergola.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Custom Pergola</a></li>
+            <li><a href="services.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">All Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;color:#E6C786;letter-spacing:0.08em;margin-bottom:1.25rem;">Contact</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.9rem;">
+            <li><a href="tel:4379900355" style="font-size:0.82rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">437-990-0355</a></li>
+            <li><a href="mailto:areterenovation16@gmail.com" style="font-size:0.82rem;color:#666;transition:color 0.2s;word-break:break-all;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">areterenovation16@gmail.com</a></li>
+            <li><span style="font-size:0.82rem;color:#666;">Greater Toronto Area, ON</span></li>
+          </ul>
+          <a href="contact.html" class="btn-gold mt-6" style="font-size:0.72rem;padding:0.7rem 1.5rem;">Free Estimate</a>
+        </div>
+      </div>
+    </div>
+    <div class="gold-divider"></div>
+    <div class="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p style="font-size:0.72rem;color:#444;">&copy; 2025 Arete Renovation. All rights reserved.</p>
+      <p style="font-size:0.72rem;color:#444;">Serving the Greater Toronto Area</p>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+</body>
+</html>

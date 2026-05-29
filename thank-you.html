@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Message Received | Arete Renovation</title>
+  <meta name="robots" content="noindex"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{gold:"#C5A059","gold-light":"#E6C786","gold-dark":"#8A6D3B"},fontFamily:{cinzel:["Cinzel","serif"],montserrat:["Montserrat","sans-serif"]}}}}</script>
+  <link rel="stylesheet" href="css/global.css"/>
+  <style>
+    .checkmark-circle {
+      width: 100px; height: 100px;
+      border-radius: 50%;
+      border: 2px solid rgba(197,160,89,0.3);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 2rem;
+      background: rgba(197,160,89,0.06);
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(197,160,89,0.2); }
+      50% { box-shadow: 0 0 0 20px rgba(197,160,89,0); }
+    }
+    .countdown { font-family:'Cinzel',serif; font-size:0.8rem; color:#8A6D3B; letter-spacing:0.1em; }
+  </style>
+</head>
+<body class="bg-[#0A0A0A]" style="min-height:100vh;display:flex;flex-direction:column;">
+
+  <nav id="navbar" class="scrolled">
+    <div class="container flex items-center justify-between">
+      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Arete Renovation Logo"/></a>
+      <a href="tel:4379900355" class="text-[#C5A059] font-montserrat text-sm font-semibold tracking-wider hover:text-[#E6C786] transition-colors">437-990-0355</a>
+    </div>
+  </nav>
+
+  <main style="flex:1;display:flex;align-items:center;justify-content:center;padding:8rem 2rem 4rem;">
+    <div class="text-center" style="max-width:600px;">
+
+      <!-- Decorative corner lines -->
+      <div style="position:relative;border:1px solid rgba(197,160,89,0.1);padding:3.5rem 3rem;margin-bottom:2rem;">
+        <div class="corner-deco tl"></div>
+        <div class="corner-deco tr"></div>
+        <div class="corner-deco bl"></div>
+        <div class="corner-deco br"></div>
+
+        <div class="checkmark-circle">
+          <svg width="40" height="40" fill="none" stroke="#C5A059" stroke-width="1.5" viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+
+        <span class="eyebrow">Message Received</span>
+
+        <h1 style="font-family:'Cinzel',serif;font-size:clamp(2rem,5vw,3rem);font-weight:900;margin:0.75rem 0 1.25rem;">
+          Thank You for <span class="gold-text">Reaching Out</span>
+        </h1>
+
+        <span class="gold-line center"></span>
+
+        <p style="color:#A0A0A0;font-size:0.95rem;line-height:1.85;margin-top:1.25rem;margin-bottom:2rem;">
+          Your message has been received and a member of the Arete Renovation team will be in touch within <strong style="color:#E6C786;">2 business hours</strong> to discuss your project and schedule your free consultation.
+        </p>
+
+        <p style="color:#666;font-size:0.82rem;margin-bottom:2rem;">
+          In the meantime, feel free to explore our services or call us directly if your project is time-sensitive.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="index.html" class="btn-gold">Return Home</a>
+          <a href="services.html" class="btn-outline">View Our Services</a>
+        </div>
+      </div>
+
+      <!-- Contact nudge -->
+      <div style="display:flex;align-items:center;justify-content:center;gap:0.75rem;">
+        <svg width="14" height="14" fill="none" stroke="#8A6D3B" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.21 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+        <span style="font-size:0.8rem;color:#666;">Need immediate assistance? Call <a href="tel:4379900355" style="color:#C5A059;font-weight:600;">437-990-0355</a></span>
+      </div>
+
+    </div>
+  </main>
+
+  <footer style="border-top:1px solid rgba(197,160,89,0.1);padding:1.5rem 0;">
+    <div class="container text-center">
+      <p style="font-size:0.72rem;color:#444;">&copy; 2025 Arete Renovation. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+  <script>
+    // Auto-redirect to home after 20 seconds
+    let count = 20;
+    const el = document.createElement('p');
+    el.className = 'countdown';
+    el.style.marginTop = '1.5rem';
+    document.querySelector('.text-center').appendChild(el);
+    const timer = setInterval(() => {
+      el.textContent = 'Redirecting to home in ' + count + ' seconds...';
+      if (--count < 0) { clearInterval(timer); window.location.href = 'index.html'; }
+    }, 1000);
+  </script>
+</body>
+</html>

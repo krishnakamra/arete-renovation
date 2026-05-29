@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Sheds | Arete Renovation Toronto</title>
+  <meta name="description" content="Custom-built garden and storage sheds in Toronto by Arete Renovation. Beautifully designed, structurally sound sheds built to match your home and last for decades."/>
+  <link rel="canonical" href="https://areterenovation.ca/custom-sheds.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{gold:"#C5A059","gold-light":"#E6C786","gold-dark":"#8A6D3B"},fontFamily:{cinzel:["Cinzel","serif"],montserrat:["Montserrat","sans-serif"]}}}}</script>
+  <link rel="stylesheet" href="css/global.css"/>
+  <style>
+    .faq-item { border-bottom:1px solid rgba(255,255,255,0.06); }
+    .faq-q { width:100%;text-align:left;background:none;border:none;color:#F5F5F5;font-family:'Cinzel',serif;font-size:0.92rem;font-weight:600;letter-spacing:0.04em;padding:1.25rem 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:color 0.3s; }
+    .faq-q:hover { color:#C5A059; }
+    .faq-icon { font-size:1.4rem;color:#C5A059;flex-shrink:0;transition:transform 0.3s;line-height:1; }
+    .faq-icon.rotated { transform:rotate(45deg); }
+    .faq-a { max-height:0;overflow:hidden;transition:max-height 0.4s ease; }
+    .faq-a.open { max-height:500px; }
+  </style>
+</head>
+<body class="bg-[#0A0A0A]">
+  <nav id="navbar">
+    <div class="container flex items-center justify-between">
+      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Arete Renovation Logo"/></a>
+      <ul class="hidden lg:flex items-center gap-8">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-dropdown"><a href="services.html" class="nav-link active">Services &#9660;</a>
+          <div class="dropdown-menu">
+            <div style="padding:0.5rem 1.2rem;font-size:0.6rem;letter-spacing:0.2em;color:#8A6D3B;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.06);">Interior</div>
+            <a href="home-improvement.html" class="dropdown-item">Home Improvement</a>
+            <a href="basement-renovation.html" class="dropdown-item">Basement Renovation</a>
+            <a href="bathroom-renovation.html" class="dropdown-item">Bathroom Renovation</a>
+            <a href="painting.html" class="dropdown-item">Painting</a>
+            <a href="carpentry.html" class="dropdown-item">Carpentry</a>
+            <a href="flooring-tiling.html" class="dropdown-item">Flooring &amp; Tiling</a>
+            <a href="handyman-services.html" class="dropdown-item">Handyman Services</a>
+            <div style="padding:0.5rem 1.2rem;font-size:0.6rem;letter-spacing:0.2em;color:#8A6D3B;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.06);border-top:1px solid rgba(255,255,255,0.06);">Exterior</div>
+            <a href="deck.html" class="dropdown-item">Deck Construction</a>
+            <a href="fence.html" class="dropdown-item">Fence Installation</a>
+            <a href="custom-sheds.html" class="dropdown-item">Custom Sheds</a>
+            <a href="custom-pergola.html" class="dropdown-item">Custom Pergola</a>
+            <a href="gazebo-installation.html" class="dropdown-item">Gazebo Installation</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hidden lg:flex items-center gap-6">
+        <a href="tel:4379900355" class="text-[#C5A059] font-montserrat text-sm font-semibold tracking-wider hover:text-[#E6C786] transition-colors">437-990-0355</a>
+        <a href="contact.html" class="btn-gold">Free Estimate</a>
+      </div>
+      <button id="hamburger" class="hamburger lg:hidden"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div id="mobile-menu">
+    <button id="mobile-close" style="position:absolute;top:1.5rem;right:1.5rem;color:#C5A059;font-size:1.5rem;background:none;border:none;">&#10005;</button>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="tel:4379900355" style="font-family:'Montserrat',sans-serif;font-size:1.1rem;color:#C5A059;font-weight:700;">437-990-0355</a>
+    <a href="contact.html" class="btn-gold mt-4">Free Estimate</a>
+  </div>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=1600&q=85&fit=crop');"></div>
+    <div class="page-hero-content container py-10">
+      <span class="service-badge mb-4 reveal" style="display:inline-block;">Exterior</span>
+      <span class="eyebrow reveal delay-1">Purpose-Built Outdoor Storage</span>
+      <h1 style="font-family:'Cinzel',serif;font-size:clamp(2.2rem,5.5vw,4.5rem);font-weight:900;margin-bottom:1rem;max-width:800px;" class="reveal delay-2">
+        Custom <span class="gold-text">Sheds</span>
+      </h1>
+      <p style="color:#A0A0A0;font-size:1.05rem;max-width:600px;line-height:1.7;" class="reveal delay-3">More than storage — a beautifully crafted outbuilding designed to complement your home and serve your needs for decades. Every shed we build is built to last.</p>
+      <div class="flex flex-wrap gap-4 mt-8 reveal delay-4">
+        <a href="contact.html" class="btn-gold">Get a Free Estimate</a>
+        <a href="tel:4379900355" class="btn-outline">437-990-0355</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="section-pad bg-[#0A0A0A]">
+    <div class="container">
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+        <div class="reveal-left">
+          <span class="eyebrow">Overview</span>
+          <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;margin-bottom:1.25rem;line-height:1.15;">
+            Why Choose Arete for <span class="gold-text">Sheds</span>?
+          </h2>
+          <span class="gold-line"></span>
+          <p style="color:#A0A0A0;line-height:1.9;font-size:0.93rem;margin-bottom:1rem;">A custom-built shed surpasses any prefabricated kit in every measurable way: structural integrity, longevity, appearance, and the ability to tailor every dimension to your specific needs. At Arete Renovation, we build sheds using the same construction standards and materials as our home renovation work — no compromises.</p>
+          <p style="color:#A0A0A0;line-height:1.9;font-size:0.93rem;">Whether you need a simple garden tool shed, a proper workshop, a bike storage shelter, or a she-shed retreat space, we design and build a custom outbuilding that fits your lot perfectly, meets zoning requirements, and complements your home's architectural character with purpose and style.</p>
+          <ul style="display:flex;flex-direction:column;gap:0.65rem;margin-top:1rem;"><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Site consultation and full permit coordination</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Engineered floor framing on concrete pads or helical piers</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Proper stud-framed wall and roof construction</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Cedar, hardie board, and vinyl siding options</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Asphalt shingle, metal, and cedar shake roofing</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Single and double door configurations</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Window installation for natural light</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Electrical rough-in and sub-panel installation</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Interior shelving and custom workbench systems</li><li style="display:flex;align-items:flex-start;gap:0.7rem;font-size:0.85rem;color:#A0A0A0;line-height:1.6;"><span style="color:#C5A059;font-size:0.9rem;flex-shrink:0;margin-top:2px;">&#9670;</span>Insulation and vapour barrier for year-round use</li></ul>
+        </div>
+        <div class="reveal-right">
+          <div style="position:relative;">
+            <img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=800&q=85&fit=crop" alt="Custom Sheds" style="width:100%;height:500px;object-fit:cover;"/>
+            <div style="position:absolute;bottom:-20px;left:-20px;background:linear-gradient(135deg,#C5A059,#8A6D3B);padding:1.5rem 2rem;">
+              <div style="font-family:'Cinzel',serif;font-size:1.6rem;font-weight:900;color:#0A0A0A;">5</div>
+              <div style="font-size:0.62rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(10,10,10,0.7);">Year Warranty</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY <div class="grid md:grid-cols-3 gap-6"><div class="reveal delay-1" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Permit-Ready Drawings</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">For sheds over 10 m² in Toronto, we prepare site plans and structural drawings for permit submission. We handle the entire administrative process end-to-end so you can focus on enjoying the result.</p></div><div class="reveal delay-2" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">True Construction Standards</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Unlike kit sheds assembled from thin pre-cut panels, our sheds are stick-framed with 2x4 or 2x6 lumber, properly sheathed, and built to withstand decades of Ontario freeze-thaw cycles without warping or failing.</p></div><div class="reveal delay-3" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Matched to Your Home</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">We design the shed's siding profile, roofline pitch, and trim details to complement your home's exterior. The result looks purposeful and deliberate — not an afterthought placed in your backyard.</p></div><div class="reveal delay-4" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Foundation Options</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Depending on your soil conditions and intended use, we install pressure-treated wood skids, a concrete pad, or helical piers — the right foundation for your specific application and local frost depth requirements.</p></div><div class="reveal delay-5" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Workshop and Studio Ready</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Need electrical, insulation, and a finished interior for a true workshop or creative studio? We wire, insulate, and finish shed interiors to the same standard as our home renovation work — fully functional, year-round spaces.</p></div><div class="reveal delay-6" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Designed to Last Decades</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">We use premium exterior-grade materials, stainless or hot-dipped galvanized fasteners, and proper flashing at every penetration. Our sheds are still standing and looking great 15 years after completion.</p></div></div> -->
+  <section class="section-pad" style="background:var(--bg-dark);">
+    <div class="container">
+      <div class="text-center mb-12 reveal">
+        <span class="eyebrow">PROCESS_Custom Sheds</span>
+        <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;">
+          Our <span class="gold-text">Approach</span>
+        </h2>
+        <span class="gold-line center"></span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6"><div class="reveal delay-1" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Permit-Ready Drawings</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">For sheds over 10 m² in Toronto, we prepare site plans and structural drawings for permit submission. We handle the entire administrative process end-to-end so you can focus on enjoying the result.</p></div><div class="reveal delay-2" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">True Construction Standards</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Unlike kit sheds assembled from thin pre-cut panels, our sheds are stick-framed with 2x4 or 2x6 lumber, properly sheathed, and built to withstand decades of Ontario freeze-thaw cycles without warping or failing.</p></div><div class="reveal delay-3" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Matched to Your Home</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">We design the shed's siding profile, roofline pitch, and trim details to complement your home's exterior. The result looks purposeful and deliberate — not an afterthought placed in your backyard.</p></div><div class="reveal delay-4" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Foundation Options</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Depending on your soil conditions and intended use, we install pressure-treated wood skids, a concrete pad, or helical piers — the right foundation for your specific application and local frost depth requirements.</p></div><div class="reveal delay-5" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Workshop and Studio Ready</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">Need electrical, insulation, and a finished interior for a true workshop or creative studio? We wire, insulate, and finish shed interiors to the same standard as our home renovation work — fully functional, year-round spaces.</p></div><div class="reveal delay-6" style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:2rem;position:relative;overflow:hidden;transition:all 0.4s;"><div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0.4;"></div><h3 style="font-family:'Cinzel',serif;font-size:0.95rem;font-weight:600;color:#E6C786;margin-bottom:0.75rem;letter-spacing:0.04em;">Designed to Last Decades</h3><p style="font-size:0.83rem;color:#666;line-height:1.75;">We use premium exterior-grade materials, stainless or hot-dipped galvanized fasteners, and proper flashing at every penetration. Our sheds are still standing and looking great 15 years after completion.</p></div></div>
+    </div>
+  </section>
+
+  <!-- <div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=700&q=80&fit=crop" alt="Garden Shed"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Garden Shed</span></div></div><div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="Workshop Build"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Workshop Build</span></div></div><div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=700&q=80&fit=crop" alt="Custom Storage"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Custom Storage</span></div></div> -->
+  <section class="section-pad bg-[#0A0A0A]">
+    <div class="container">
+      <div class="text-center mb-12 reveal">
+        <span class="eyebrow">Project Gallery</span>
+        <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;">
+          Recent <span class="gold-text">Work</span>
+        </h2>
+        <span class="gold-line center"></span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1541123437800-1bb1317badc2?w=700&q=80&fit=crop" alt="Garden Shed"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Garden Shed</span></div></div><div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&fit=crop" alt="Workshop Build"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Workshop Build</span></div></div><div class="img-card reveal" style="height:280px;" data-lightbox><img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=700&q=80&fit=crop" alt="Custom Storage"/><div class="img-card-overlay"></div><div style="position:absolute;bottom:1rem;left:1rem;z-index:2;"><span class="service-badge">Custom Storage</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-pad" style="background:var(--bg-dark);">
+    <div class="container-sm">
+      <div class="text-center mb-12 reveal">
+        <span class="eyebrow">Common Questions</span>
+        <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;">
+          Frequently <span class="gold-text">Asked</span>
+        </h2>
+        <span class="gold-line center"></span>
+      </div>
+      <div>
+        <div class="faq-item reveal"><button class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.faq-icon').classList.toggle('rotated')"><span>Do I need a permit for a shed in Toronto?</span><span class="faq-icon">+</span></button><div class="faq-a"><p style="font-size:0.87rem;color:#A0A0A0;line-height:1.8;padding:1rem 0;">Sheds over 10 m² (108 sq ft) require a building permit in the City of Toronto. We handle the permit application and all required drawings as part of our full-service approach. Smaller sheds typically do not require a permit but must still meet zoning setback requirements.</p></div></div><div class="faq-item reveal"><button class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.faq-icon').classList.toggle('rotated')"><span>Can you match the shed's exterior to my house?</span><span class="faq-icon">+</span></button><div class="faq-a"><p style="font-size:0.87rem;color:#A0A0A0;line-height:1.8;padding:1rem 0;">Absolutely. We select siding style, trim colour, roofing material, and door style to complement your home's existing exterior. Many of our clients report that visitors assume the shed was always part of the original build.</p></div></div><div class="faq-item reveal"><button class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.faq-icon').classList.toggle('rotated')"><span>How long does a custom shed build take?</span><span class="faq-icon">+</span></button><div class="faq-a"><p style="font-size:0.87rem;color:#A0A0A0;line-height:1.8;padding:1rem 0;">A standard 10x12 ft shed typically takes 3-5 days on site. Larger workshop builds with electrical and interior finishing can take 2-3 weeks. Permit processing time varies by municipality and is typically 2-6 weeks.</p></div></div><div class="faq-item reveal"><button class="faq-q" onclick="this.nextElementSibling.classList.toggle('open');this.querySelector('.faq-icon').classList.toggle('rotated')"><span>Can you add electricity to my shed?</span><span class="faq-icon">+</span></button><div class="faq-a"><p style="font-size:0.87rem;color:#A0A0A0;line-height:1.8;padding:1rem 0;">Yes. We coordinate with a licensed electrician to run a sub-panel feed from your home, install outlets, lighting, and any dedicated circuits you need for tools or appliances. A properly wired shed adds significant utility and property value.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section-pad-sm" style="background:linear-gradient(135deg,#111111 0%,#1a1400 60%,#111111 100%);border-top:1px solid rgba(197,160,89,0.1);border-bottom:1px solid rgba(197,160,89,0.1);">
+    <div class="container text-center">
+      <span class="eyebrow reveal">Start Your Project</span>
+      <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.75rem,4vw,2.8rem);font-weight:700;margin-bottom:1rem;" class="reveal delay-1">
+        Ready for Your <span class="gold-text">Sheds Transformation</span>?
+      </h2>
+      <p style="color:#666;font-size:0.92rem;max-width:520px;margin:0 auto 2rem;" class="reveal delay-2">Contact Arete Renovation today for a free, no-obligation estimate. Our specialists will walk through your project and provide a transparent, detailed quote.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-3">
+        <a href="contact.html" class="btn-gold">Request Free Estimate</a>
+        <a href="tel:4379900355" class="btn-outline">Call 437-990-0355</a>
+      </div>
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="lg:col-span-2">
+          <div class="footer-logo mb-5"><img src="images/logo.svg" alt="Arete Renovation Logo"/></div>
+          <p style="font-size:0.85rem;color:#666;line-height:1.8;max-width:340px;margin-bottom:1.5rem;">Toronto&#39;s premier home renovation and remodeling experts. Craftsmanship that stands the test of time.</p>
+          <div style="display:flex;gap:0.75rem;">
+            <a href="#" style="width:36px;height:36px;border:1px solid rgba(197,160,89,0.2);display:flex;align-items:center;justify-content:center;color:#8A6D3B;transition:all 0.3s;" onmouseover="this.style.borderColor='#C5A059';this.style.color='#C5A059'" onmouseout="this.style.borderColor='rgba(197,160,89,0.2)';this.style.color='#8A6D3B'" aria-label="Facebook"><svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="#" style="width:36px;height:36px;border:1px solid rgba(197,160,89,0.2);display:flex;align-items:center;justify-content:center;color:#8A6D3B;transition:all 0.3s;" onmouseover="this.style.borderColor='#C5A059';this.style.color='#C5A059'" onmouseout="this.style.borderColor='rgba(197,160,89,0.2)';this.style.color='#8A6D3B'" aria-label="Instagram"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;color:#E6C786;letter-spacing:0.08em;margin-bottom:1.25rem;">Our Services</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.6rem;">
+            <li><a href="basement-renovation.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Basement Renovation</a></li>
+            <li><a href="bathroom-renovation.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Bathroom Renovation</a></li>
+            <li><a href="deck.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Deck Construction</a></li>
+            <li><a href="custom-pergola.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Custom Pergola</a></li>
+            <li><a href="services.html" style="font-size:0.8rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">All Services</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;color:#E6C786;letter-spacing:0.08em;margin-bottom:1.25rem;">Contact</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.9rem;">
+            <li><a href="tel:4379900355" style="font-size:0.82rem;color:#666;transition:color 0.2s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">437-990-0355</a></li>
+            <li><a href="mailto:areterenovation16@gmail.com" style="font-size:0.82rem;color:#666;transition:color 0.2s;word-break:break-all;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">areterenovation16@gmail.com</a></li>
+            <li><span style="font-size:0.82rem;color:#666;">Greater Toronto Area, ON</span></li>
+          </ul>
+          <a href="contact.html" class="btn-gold mt-6" style="font-size:0.72rem;padding:0.7rem 1.5rem;">Free Estimate</a>
+        </div>
+      </div>
+    </div>
+    <div class="gold-divider"></div>
+    <div class="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p style="font-size:0.72rem;color:#444;">&copy; 2025 Arete Renovation. All rights reserved.</p>
+      <p style="font-size:0.72rem;color:#444;">Serving the Greater Toronto Area</p>
+    </div>
+  </footer>
+  <script src="js/global.js"></script>
+</body>
+</html>

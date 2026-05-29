@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Arete Renovation | Free Estimates Toronto</title>
+  <meta name="description" content="Get a free renovation estimate from Arete Renovation. Call 437-990-0355 or fill out our form. Serving the Greater Toronto Area."/>
+  <link rel="canonical" href="https://areterenovation.ca/contact.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{gold:'#C5A059','gold-light':'#E6C786','gold-dark':'#8A6D3B'},fontFamily:{cinzel:['Cinzel','serif'],montserrat:['Montserrat','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="css/global.css"/>
+  <style>
+    .contact-info-card { background:var(--bg-card); border:1px solid rgba(255,255,255,0.05); padding:1.75rem; display:flex; gap:1.25rem; align-items:flex-start; transition:all 0.3s; }
+    .contact-info-card:hover { border-color:rgba(197,160,89,0.25); }
+    .contact-icon { width:46px; height:46px; background:rgba(197,160,89,0.08); border:1px solid rgba(197,160,89,0.2); display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .form-wrap { background:var(--bg-card); border:1px solid rgba(255,255,255,0.05); padding:3rem; position:relative; }
+    .form-wrap::before { content:''; position:absolute; top:0;left:0; right:0; height:3px; background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-dark)); }
+    .success-msg { display:none; background:rgba(197,160,89,0.08); border:1px solid rgba(197,160,89,0.3); padding:1.5rem; text-align:center; }
+  </style>
+</head>
+<body class="bg-[#0A0A0A]">
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container flex items-center justify-between">
+      <a href="index.html" class="nav-logo"><img src="images/logo.svg" alt="Arete Renovation Logo"/></a>
+      <ul class="hidden lg:flex items-center gap-8">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-dropdown">
+          <a href="services.html" class="nav-link">Services ▾</a>
+          <div class="dropdown-menu">
+            <div style="padding:0.5rem 1.2rem;font-size:0.6rem;letter-spacing:0.2em;color:#8A6D3B;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.06);">Interior</div>
+            <a href="home-improvement.html" class="dropdown-item">Home Improvement</a>
+            <a href="basement-renovation.html" class="dropdown-item">Basement Renovation</a>
+            <a href="bathroom-renovation.html" class="dropdown-item">Bathroom Renovation</a>
+            <a href="painting.html" class="dropdown-item">Painting</a>
+            <a href="carpentry.html" class="dropdown-item">Carpentry</a>
+            <a href="flooring-tiling.html" class="dropdown-item">Flooring & Tiling</a>
+            <a href="handyman-services.html" class="dropdown-item">Handyman Services</a>
+            <div style="padding:0.5rem 1.2rem;font-size:0.6rem;letter-spacing:0.2em;color:#8A6D3B;font-weight:700;text-transform:uppercase;border-bottom:1px solid rgba(255,255,255,0.06);border-top:1px solid rgba(255,255,255,0.06);">Exterior</div>
+            <a href="deck.html" class="dropdown-item">Deck Construction</a>
+            <a href="fence.html" class="dropdown-item">Fence Installation</a>
+            <a href="custom-sheds.html" class="dropdown-item">Custom Sheds</a>
+            <a href="custom-pergola.html" class="dropdown-item">Custom Pergola</a>
+            <a href="gazebo-installation.html" class="dropdown-item">Gazebo Installation</a>
+          </div>
+        </li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+      <div class="hidden lg:flex items-center gap-6">
+        <a href="tel:4379900355" class="text-[#C5A059] font-montserrat text-sm font-semibold tracking-wider hover:text-[#E6C786] transition-colors">437-990-0355</a>
+        <a href="contact.html" class="btn-gold">Free Estimate</a>
+      </div>
+      <button id="hamburger" class="hamburger lg:hidden"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div id="mobile-menu">
+    <button id="mobile-close" style="position:absolute;top:1.5rem;right:1.5rem;color:#C5A059;font-size:1.5rem;background:none;border:none;">✕</button>
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="services.html" class="mobile-link">Services</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="tel:4379900355" style="font-family:'Montserrat',sans-serif;font-size:1.1rem;color:#C5A059;font-weight:700;">437-990-0355</a>
+    <a href="contact.html" class="btn-gold mt-4">Free Estimate</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1600&q=85&fit=crop');"></div>
+    <div class="page-hero-content container text-center py-10">
+      <span class="eyebrow reveal">Get in Touch</span>
+      <h1 style="font-family:'Cinzel',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:900;margin-bottom:1rem;" class="reveal delay-1">
+        Let's <span class="gold-text">Build Together</span>
+      </h1>
+      <p style="color:#A0A0A0;font-size:1.05rem;max-width:560px;margin:0 auto;" class="reveal delay-2">
+        Ready to transform your space? Request a free, no-obligation estimate and speak with our renovation specialists today.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTACT SECTION -->
+  <section class="section-pad bg-[#0A0A0A]">
+    <div class="container">
+      <div class="grid lg:grid-cols-5 gap-12">
+
+        <!-- Left: Info Cards -->
+        <div class="lg:col-span-2 flex flex-col gap-5">
+          <div class="reveal delay-1">
+            <span class="eyebrow">Contact Information</span>
+            <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;margin-bottom:0.5rem;">
+              Reach <span class="gold-text">Anytime</span>
+            </h2>
+            <span class="gold-line"></span>
+            <p style="font-size:0.88rem;color:#666;line-height:1.8;margin-top:0.5rem;">We typically respond within 2 business hours. For urgent matters, call us directly — we're always happy to talk.</p>
+          </div>
+
+          <div class="contact-info-card reveal delay-2">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="#C5A059" stroke-width="1.5" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.07 1.21 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#8A6D3B;margin-bottom:0.3rem;">Phone</div>
+              <a href="tel:4379900355" style="font-size:1rem;font-weight:600;color:#E6C786;font-family:'Cinzel',serif;transition:color 0.3s;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#E6C786'">437-990-0355</a>
+              <div style="font-size:0.78rem;color:#555;margin-top:0.2rem;">Mon – Sat, 7:00 AM – 7:00 PM</div>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal delay-3">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="#C5A059" stroke-width="1.5" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#8A6D3B;margin-bottom:0.3rem;">Email</div>
+              <a href="mailto:areterenovation16@gmail.com" style="font-size:0.88rem;font-weight:600;color:#E6C786;font-family:'Cinzel',serif;transition:color 0.3s;word-break:break-all;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#E6C786'">areterenovation16@gmail.com</a>
+              <div style="font-size:0.78rem;color:#555;margin-top:0.2rem;">We reply within 2 business hours</div>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal delay-4">
+            <div class="contact-icon">
+              <svg width="20" height="20" fill="none" stroke="#C5A059" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 018 8c0 5.5-8 12-8 12S4 15.5 4 10a8 8 0 018-8z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:0.68rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#8A6D3B;margin-bottom:0.3rem;">Service Area</div>
+              <div style="font-size:0.92rem;font-weight:600;color:#E6C786;font-family:'Cinzel',serif;">Greater Toronto Area</div>
+              <div style="font-size:0.78rem;color:#555;margin-top:0.2rem;">Toronto · Mississauga · Etobicoke · North York · Scarborough · Brampton · Vaughan</div>
+            </div>
+          </div>
+
+          <!-- Why Choose Us quick list -->
+          <div style="background:var(--bg-card);border:1px solid rgba(255,255,255,0.05);padding:1.75rem;" class="reveal delay-2">
+            <h4 style="font-family:'Cinzel',serif;font-size:0.9rem;color:#E6C786;margin-bottom:1rem;letter-spacing:0.06em;">Why Choose Arete?</h4>
+            <ul style="display:flex;flex-direction:column;gap:0.65rem;">
+              <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#A0A0A0;">
+                <span style="color:#C5A059;font-size:1rem;">✓</span> Free, detailed estimates
+              </li>
+              <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#A0A0A0;">
+                <span style="color:#C5A059;font-size:1rem;">✓</span> 5-Year Workmanship Warranty
+              </li>
+              <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#A0A0A0;">
+                <span style="color:#C5A059;font-size:1rem;">✓</span> Licensed and fully insured
+              </li>
+              <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#A0A0A0;">
+                <span style="color:#C5A059;font-size:1rem;">✓</span> No hidden costs, ever
+              </li>
+              <li style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#A0A0A0;">
+                <span style="color:#C5A059;font-size:1rem;">✓</span> 98% client satisfaction rate
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="lg:col-span-3">
+          <div class="form-wrap reveal-right">
+            <div class="corner-deco tl"></div>
+            <div class="corner-deco br"></div>
+            <h3 style="font-family:'Cinzel',serif;font-size:1.4rem;font-weight:700;color:#F5F5F5;margin-bottom:0.5rem;">Request a Free Estimate</h3>
+            <p style="font-size:0.84rem;color:#666;margin-bottom:2rem;">Complete the form below and our team will reach out to schedule your free, no-obligation consultation.</p>
+
+            <!-- Netlify form -->
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+              <input type="hidden" name="form-name" value="contact"/>
+              <input type="text" name="bot-field" style="display:none;" aria-hidden="true"/>
+
+              <div class="grid sm:grid-cols-2 gap-5 mb-5">
+                <div class="form-group">
+                  <label class="form-label" for="first-name">First Name <span style="color:#C5A059;">*</span></label>
+                  <input class="form-input" type="text" id="first-name" name="first-name" placeholder="John" required/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="last-name">Last Name <span style="color:#C5A059;">*</span></label>
+                  <input class="form-input" type="text" id="last-name" name="last-name" placeholder="Smith" required/>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-5 mb-5">
+                <div class="form-group">
+                  <label class="form-label" for="email">Email Address <span style="color:#C5A059;">*</span></label>
+                  <input class="form-input" type="email" id="email" name="email" placeholder="john@example.com" required/>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="phone">Phone Number <span style="color:#C5A059;">*</span></label>
+                  <input class="form-input" type="tel" id="phone" name="phone" placeholder="416-555-0100" required/>
+                </div>
+              </div>
+
+              <div class="form-group mb-5">
+                <label class="form-label" for="service">Service Needed <span style="color:#C5A059;">*</span></label>
+                <select class="form-input" id="service" name="service" required>
+                  <option value="" disabled selected>Select a service...</option>
+                  <optgroup label="Interior">
+                    <option>Home Improvement</option>
+                    <option>Basement Renovation</option>
+                    <option>Bathroom Renovation</option>
+                    <option>Painting</option>
+                    <option>Carpentry</option>
+                    <option>Flooring & Tiling</option>
+                    <option>Handyman Services</option>
+                  </optgroup>
+                  <optgroup label="Exterior">
+                    <option>Deck Construction</option>
+                    <option>Fence Installation</option>
+                    <option>Custom Sheds</option>
+                    <option>Custom Pergola</option>
+                    <option>Gazebo Installation</option>
+                  </optgroup>
+                  <option>Multiple Services</option>
+                  <option>Other / Not Sure</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-5">
+                <label class="form-label" for="budget">Approximate Budget</label>
+                <select class="form-input" id="budget" name="budget">
+                  <option value="" disabled selected>Select a range...</option>
+                  <option>Under $5,000</option>
+                  <option>$5,000 – $15,000</option>
+                  <option>$15,000 – $30,000</option>
+                  <option>$30,000 – $60,000</option>
+                  <option>$60,000+</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-5">
+                <label class="form-label" for="timeline">Ideal Start Date</label>
+                <select class="form-input" id="timeline" name="timeline">
+                  <option value="" disabled selected>When would you like to start?</option>
+                  <option>As soon as possible</option>
+                  <option>Within 1 month</option>
+                  <option>1–3 months</option>
+                  <option>3–6 months</option>
+                  <option>6+ months / just planning</option>
+                </select>
+              </div>
+
+              <div class="form-group mb-7">
+                <label class="form-label" for="message">Tell Us About Your Project <span style="color:#C5A059;">*</span></label>
+                <textarea class="form-input" id="message" name="message" placeholder="Describe your project, goals, any existing issues, and anything else that would help us prepare for your consultation..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-gold w-full justify-center" style="padding:1rem;">
+                Send My Request
+                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+
+              <p style="font-size:0.72rem;color:#444;text-align:center;margin-top:1rem;">Your information is private. We never share or sell your data.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <section class="bg-[#0A0A0A]" style="padding-bottom:5rem;">
+    <div class="container">
+      <div class="reveal">
+        <div style="position:relative;overflow:hidden;border:1px solid rgba(197,160,89,0.15);">
+          <div style="background:var(--bg-card);padding:1rem 1.5rem;border-bottom:1px solid rgba(197,160,89,0.1);display:flex;align-items:center;gap:0.75rem;">
+            <svg width="16" height="16" fill="none" stroke="#C5A059" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 018 8c0 5.5-8 12-8 12S4 15.5 4 10a8 8 0 018-8z"/></svg>
+            <span style="font-size:0.75rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#8A6D3B;">Serving the Greater Toronto Area</span>
+          </div>
+          <!-- Embedded Google Map - GTA -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.72474396906!2d-79.54286689551316!3d43.71800058019704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON!5e0!3m2!1sen!2sca!4v1715000000000!5m2!1sen!2sca"
+            width="100%"
+            height="400"
+            style="border:0;filter:invert(90%) hue-rotate(180deg) brightness(0.75) contrast(1.1);"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Arete Renovation Service Area — Greater Toronto Area"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container py-16">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="lg:col-span-2">
+          <div class="footer-logo mb-5"><img src="images/logo.svg" alt="Arete Renovation Logo"/></div>
+          <p style="font-size:0.85rem;color:#666;line-height:1.8;max-width:340px;margin-bottom:1.5rem;">Toronto's premier home renovation experts. We transform ordinary spaces into extraordinary homes.</p>
+        </div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;color:#E6C786;letter-spacing:0.08em;margin-bottom:1.25rem;">Services</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.6rem;">
+            <li><a href="basement-renovation.html" style="font-size:0.8rem;color:#666;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Basement Renovation</a></li>
+            <li><a href="bathroom-renovation.html" style="font-size:0.8rem;color:#666;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Bathroom Renovation</a></li>
+            <li><a href="deck.html" style="font-size:0.8rem;color:#666;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Deck Construction</a></li>
+            <li><a href="custom-pergola.html" style="font-size:0.8rem;color:#666;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">Custom Pergola</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="font-family:'Cinzel',serif;font-size:0.85rem;font-weight:600;color:#E6C786;letter-spacing:0.08em;margin-bottom:1.25rem;">Contact</h4>
+          <ul style="display:flex;flex-direction:column;gap:0.9rem;">
+            <li><a href="tel:4379900355" style="font-size:0.82rem;color:#666;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">437-990-0355</a></li>
+            <li><a href="mailto:areterenovation16@gmail.com" style="font-size:0.82rem;color:#666;word-break:break-all;" onmouseover="this.style.color='#C5A059'" onmouseout="this.style.color='#666'">areterenovation16@gmail.com</a></li>
+            <li><span style="font-size:0.82rem;color:#666;">Greater Toronto Area, ON</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="gold-divider"></div>
+    <div class="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p style="font-size:0.72rem;color:#444;">&copy; 2025 Arete Renovation. All rights reserved.</p>
+      <p style="font-size:0.72rem;color:#444;">Serving the Greater Toronto Area</p>
+    </div>
+  </footer>
+
+  <script src="js/global.js"></script>
+</body>
+</html>
